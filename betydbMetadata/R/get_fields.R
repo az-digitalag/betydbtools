@@ -23,3 +23,4 @@ get_fields <- function(tbl_fields, row){
   com_tbl_fields <- tbl_fields[tbl_fields %in% com_fields]
   return(com_tbl_fields)
 }
+
