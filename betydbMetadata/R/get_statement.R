@@ -23,3 +23,5 @@ get_statement <- function(dbcon, tbl_name, fields){
                               .con = dbcon)
   return(statement)
 }
+                         
+                         
