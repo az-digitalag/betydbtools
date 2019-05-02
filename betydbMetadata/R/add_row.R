@@ -37,3 +37,4 @@ add_row <- function(row, dbcon, tbl_name, tbl_fields, user_id = NULL, commit = F
   prepared_statement(dbcon, statement, params)
   ifelse(commit == TRUE, DBI::dbCommit(dbcon), DBI::dbRollback(dbcon))
 }
+
