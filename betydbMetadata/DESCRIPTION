@@ -1,0 +1,13 @@
+Package: betydbMetadata
+Title: R Package for Uploading Metadata to BETYdb
+Version: 1.0.0
+Authors@R: person("Kimberly", "Huynh", role = c("aut", "cre"), email = "kimberlyh@email.arizona.edu")
+Description: Uploads new experiments, sites, treatments, cultivars, and 
+  citations metadata to BETYdb and associates added metadata.
+Imports:
+  DBI,
+  glue
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
