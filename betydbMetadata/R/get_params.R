@@ -19,3 +19,4 @@ get_params <- function(row, fields){
   params <- unname(as.list(row[fields]))
   return(params)
 }
+
