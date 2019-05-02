@@ -81,3 +81,4 @@ prepared_statement <- function(con, query, params) {
   res <- DBI::dbBind(qry, params)
   on.exit(DBI::dbClearResult(res))
 }
+
