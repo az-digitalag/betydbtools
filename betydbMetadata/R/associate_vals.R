@@ -29,3 +29,4 @@ associate_vals <- function(tbl_name, col_1, col_2, val_1, val_2, dbcon, commit =
   prepared_statement(dbcon, statement, params)
   ifelse(commit == TRUE, DBI::dbCommit(dbcon), DBI::dbRollback(dbcon))
 }
+
