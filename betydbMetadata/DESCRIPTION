@@ -6,7 +6,10 @@ Description: Uploads new experiments, sites, treatments, cultivars, and
   citations metadata to BETYdb and associates added metadata.
 Imports:
   DBI,
-  glue
+  glue,
+  dplyr,
+  jsonlite,
+  tibble
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
