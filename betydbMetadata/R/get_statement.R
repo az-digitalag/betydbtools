@@ -24,4 +24,4 @@ get_statement <- function(dbcon, tbl_name, fields){
   return(statement)
 }
                          
-                         
+                        
