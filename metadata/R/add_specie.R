@@ -21,7 +21,7 @@ add_specie <- function(species_to_add, dbcon, commit = FALSE){
       statement <- glue::glue_sql("insert into species (scientificname) values ({spp})",
                                   .con = dbcon)
       DBI::dbBegin(dbcon)
-      state <- DBI::dbSendStatement(con, statement)
+      state <- DBI::dbSendStatement(dbcon, statement)
       DBI::dbClearResult(state)
       ifelse(commit == TRUE, DBI::dbCommit(dbcon), DBI::dbRollback(dbcon))
     }
