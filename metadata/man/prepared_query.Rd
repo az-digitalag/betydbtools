@@ -74,4 +74,3 @@ prepared_statement(con, paste(
 \author{
 Alexey Shiklomanov
 }
-
