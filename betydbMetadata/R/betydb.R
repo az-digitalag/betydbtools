@@ -325,26 +325,26 @@ betydb_record <- function(id, table, api_version = NULL, betyurl = NULL, fmt = N
   betydb_GET(makeurl(table, id, fmt, api_version, betyurl), args, which = makepropname(table, api_version))
 }
 
-#' @export
-#' @rdname betydb
-betydb_trait <- function(id, genus = NULL, species = NULL, api_version = NULL, betyurl = NULL, fmt = "json", key = NULL, user = NULL, pwd = NULL, ...){
-  args <- traitsc(list(species.genus = genus, species.species = species))
-  betydb_GET(makeurl("variables", id, fmt, api_version, betyurl), args, key, user, pwd, "variable", ...)
-}
+# #' @export
+# #' @rdname betydb
+#betydb_trait <- function(id, genus = NULL, species = NULL, api_version = NULL, betyurl = NULL, fmt = "json", key = NULL, user = NULL, pwd = NULL, ...){
+#  args <- traitsc(list(species.genus = genus, species.species = species))
+#  betydb_GET(makeurl("variables", id, fmt, api_version, betyurl), args, key, user, pwd, "variable", ...)
+#}
 
-#' @export
-#' @rdname betydb
-betydb_specie <- function(id, genus = NULL, species = NULL, api_version = NULL, betyurl = NULL, fmt = "json", key = NULL, user = NULL, pwd = NULL, ...){
-  args <- traitsc(list(genus = genus, species = species))
-  betydb_GET(makeurl("species", id, fmt, api_version, betyurl), args, key, user, pwd, "specie", ...)
-}
+# #' @export
+# #' @rdname betydb
+#betydb_specie <- function(id, genus = NULL, species = NULL, api_version = NULL, betyurl = NULL, fmt = "json", key = NULL, user = NULL, pwd = NULL, ...){
+#  args <- traitsc(list(genus = genus, species = species))
+#  betydb_GET(makeurl("species", id, fmt, api_version, betyurl), args, key, user, pwd, "specie", ...)
+#}
 
-#' @export
-#' @rdname betydb
-betydb_citation <- function(id, genus = NULL, species = NULL, api_version = NULL, betyurl = NULL, fmt = "json", key = NULL, user = NULL, pwd = NULL, ...){
-  args <- traitsc(list(genus = genus, species = species))
-  betydb_GET(makeurl("citations", id, fmt, api_version, betyurl), args, key, user, pwd, "citation", ...)
-}
+# #' @export
+# #' @rdname betydb
+#betydb_citation <- function(id, genus = NULL, species = NULL, api_version = NULL, betyurl = NULL, fmt = "json", key = NULL, user = NULL, pwd = NULL, ...){
+#  args <- traitsc(list(genus = genus, species = species))
+#  betydb_GET(makeurl("citations", id, fmt, api_version, betyurl), args, key, user, pwd, "citation", ...)
+#}
 
 #' @export
 #' @rdname betydb
