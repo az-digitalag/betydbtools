@@ -6,7 +6,7 @@
 #' @param fields Names of fields for returned parameters;
 #' to be used to subset row (character vector)
 #'
-#' @return parameters (unnamed list)
+#' @return Parameters (unnamed list)
 #' @export
 #'
 #' @examples

@@ -7,7 +7,7 @@
 #' @param commit Value indicating whether to commit database transaction
 #' (boolean: TRUE or FALSE; default is FALSE)
 #'
-#' @return exits silently on success
+#' @return Exits silently on success
 #' @export
 #'
 #' @examples

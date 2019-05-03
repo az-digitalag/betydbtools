@@ -12,7 +12,7 @@
 #' @param commit Value indicating whether to commit database transaction;
 #' (boolean: TRUE or FALSE, default is FALSE)
 #'
-#' @return exits on success
+#' @return Exits on success
 #' @export
 #'
 #' @examples

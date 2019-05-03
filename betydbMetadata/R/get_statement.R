@@ -6,7 +6,7 @@
 #' @param tbl_name Name of BETYdb table (character, length 1)
 #' @param fields Names of fields to include in statement (character vector)
 #'
-#' @return parameterized sql statement to be passed into `prepared_statement` (character, length 1)
+#' @return Parameterized sql statement to be passed into `prepared_statement` (character, length 1)
 #' @export
 #'
 #' @examples

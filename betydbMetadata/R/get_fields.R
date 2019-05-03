@@ -7,7 +7,7 @@
 #' used to subset row (character vector)
 #' @param row Single row of a google sheet (tibble with dim 1 x n)
 #'
-#' @return names of fields of row that have a user inputted value
+#' @return Names of fields of row that have a user inputted value
 #' and is a field name in specific betydb table (character vector)
 #' @export
 #'
