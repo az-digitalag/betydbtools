@@ -9,12 +9,12 @@ get_statement(dbcon, tbl_name, fields)
 \arguments{
 \item{dbcon}{Database connection, as created by [RPostgres::dbConnect]}
 
-\item{tbl_name}{name of BETYdb table (character, length 1)}
+\item{tbl_name}{Name of BETYdb table (character, length 1)}
 
-\item{fields}{names of fields to include in statement (character vector)}
+\item{fields}{Names of fields to include in statement (character vector)}
 }
 \value{
-parameterized sql statement to be passed into `prepared_statement` (character, length 1)
+Parameterized sql statement to be passed into `prepared_statement` (character, length 1)
 }
 \description{
 Get parameterized statement to insert data into specified BETYdb table

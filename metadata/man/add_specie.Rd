@@ -7,15 +7,15 @@
 add_specie(species_to_add, dbcon, commit = FALSE)
 }
 \arguments{
-\item{species_to_add}{names of species to add to specie table (character vector)}
+\item{species_to_add}{Names of species to add to specie table (character vector)}
 
 \item{dbcon}{Database connection, as created by [RPostgres::dbConnect]}
 
-\item{commit}{value indicating whether to commit database transaction
+\item{commit}{Value indicating whether to commit database transaction
 (boolean: TRUE or FALSE; default is FALSE)}
 }
 \value{
-exits silently on success
+Exits silently on success
 }
 \description{
 Add a specie to BETYdb species table

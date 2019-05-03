@@ -8,23 +8,23 @@ add_row(row, dbcon, tbl_name, tbl_fields, user_id = NULL,
   commit = FALSE)
 }
 \arguments{
-\item{row}{single row from google sheet (tibble of dim 1 x n)}
+\item{row}{Single row from google sheet (tibble of dim 1 x n)}
 
 \item{dbcon}{Database connection, as created by [RPostgres::dbConnect]}
 
-\item{tbl_name}{name of BETYdb table (character, length 1)}
+\item{tbl_name}{Name of BETYdb table (character, length 1)}
 
-\item{tbl_fields}{names of fields of BETYdb table that are also field names of row;
+\item{tbl_fields}{Names of fields of BETYdb table that are also field names of row;
 used to subset row (character vector)}
 
 \item{user_id}{BETYdb user id; only needed when inserting new experiments;
 default = NULL (integer length 1)}
 
-\item{commit}{value indicating whether to commit database transaction;
+\item{commit}{Value indicating whether to commit database transaction;
 (boolean: TRUE or FALSE, default is FALSE)}
 }
 \value{
-exits on success
+Exits on success
 }
 \description{
 Add a row of data from google sheet into specified BETYdb table

@@ -8,23 +8,23 @@ associate_vals(tbl_name, col_1, col_2, val_1, val_2, dbcon,
   commit = FALSE)
 }
 \arguments{
-\item{tbl_name}{name of BETYdb table (character, length 1)}
+\item{tbl_name}{Name of BETYdb table (character, length 1)}
 
-\item{col_1}{name of first id column of BETYdb table (character length 1)}
+\item{col_1}{Name of first id column of BETYdb table (character length 1)}
 
-\item{col_2}{name of second id column of BETYdb table (character length 1)}
+\item{col_2}{Name of second id column of BETYdb table (character length 1)}
 
-\item{val_1}{first id value corresponding to column 1 (integer length 1)}
+\item{val_1}{First id value corresponding to column 1 (integer length 1)}
 
-\item{val_2}{second id value corresponding to column 2 (integer length 1)}
+\item{val_2}{Second id value corresponding to column 2 (integer length 1)}
 
 \item{dbcon}{Database connection, as created by [RPostgres::dbConnect]}
 
-\item{commit}{value indicating whether to commit database transaction;
+\item{commit}{Value indicating whether to commit database transaction;
 (boolean: TRUE or FALSE, default is FALSE)}
 }
 \value{
-exits on success
+Exits on success
 }
 \description{
 Associate two values in BETYdb

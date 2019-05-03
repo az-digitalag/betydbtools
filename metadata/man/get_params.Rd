@@ -7,13 +7,13 @@
 get_params(row, fields)
 }
 \arguments{
-\item{row}{single row from google sheet (tibble with dim 1 x n)}
+\item{row}{Single row from google sheet (tibble with dim 1 x n)}
 
-\item{fields}{names of fields for returned parameters;
+\item{fields}{Names of fields for returned parameters;
 to be used to subset row (character vector)}
 }
 \value{
-parameters (unnamed list)
+Parameters (unnamed list)
 }
 \description{
 Get parameters for a prepared statement
