@@ -1,4 +1,4 @@
-Package: betydbMetadata
+Package: metadata
 Title: R Package for Uploading Metadata to BETYdb
 Version: 1.0.0
 Authors@R: person("Kimberly", "Huynh", role = c("aut", "cre"), email = "kimberlyh@email.arizona.edu")
