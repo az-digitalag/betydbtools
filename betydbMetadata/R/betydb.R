@@ -154,6 +154,10 @@ betydb_query <- function(..., table = "search", key = NULL, api_version = NULL, 
 }
 
 #' @export
+#' 
+#' @importFrom utils txtProgressBar setTxtProgressBar
+#' @importFrom httr GET authenticate content stop_for_status
+#' 
 #' @rdname betydb_query
 betydb_search <- function(query = "Maple SLA", ..., include_unchecked = NULL){
   betydb_query(search = query, table = "search", include_unchecked = include_unchecked, ...)
