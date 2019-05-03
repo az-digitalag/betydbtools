@@ -2,9 +2,9 @@
 #'
 #' Add a specie to BETYdb species table
 #'
-#' @param species_to_add names of species to add to specie table (character vector)
+#' @param species_to_add Names of species to add to specie table (character vector)
 #' @param dbcon Database connection, as created by [RPostgres::dbConnect]
-#' @param commit value indicating whether to commit database transaction
+#' @param commit Value indicating whether to commit database transaction
 #' (boolean: TRUE or FALSE; default is FALSE)
 #'
 #' @return exits silently on success

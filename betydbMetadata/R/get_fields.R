@@ -3,9 +3,9 @@
 #' Get names of fields for a row that have a value
 #' and is also a field name in betydb table
 #'
-#' @param tbl_fields names of fields of specific betydb table that are also field names of row;
+#' @param tbl_fields Names of fields of specific betydb table that are also field names of row;
 #' used to subset row (character vector)
-#' @param row single row of a google sheet (tibble with dim 1 x n)
+#' @param row Single row of a google sheet (tibble with dim 1 x n)
 #'
 #' @return names of fields of row that have a user inputted value
 #' and is a field name in specific betydb table (character vector)

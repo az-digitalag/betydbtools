@@ -2,8 +2,8 @@
 #'
 #' Get parameters for a prepared statement
 #'
-#' @param row single row from google sheet (tibble with dim 1 x n)
-#' @param fields names of fields for returned parameters;
+#' @param row Single row from google sheet (tibble with dim 1 x n)
+#' @param fields Names of fields for returned parameters;
 #' to be used to subset row (character vector)
 #'
 #' @return parameters (unnamed list)

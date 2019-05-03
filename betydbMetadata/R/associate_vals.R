@@ -2,13 +2,13 @@
 #'
 #' Associate two values in BETYdb
 #'
-#' @param tbl_name name of BETYdb table (character, length 1)
-#' @param col_1 name of first id column of BETYdb table (character length 1)
-#' @param col_2 name of second id column of BETYdb table (character length 1)
-#' @param val_1 first id value corresponding to column 1 (integer length 1)
-#' @param val_2 second id value corresponding to column 2 (integer length 1)
+#' @param tbl_name Name of BETYdb table (character, length 1)
+#' @param col_1 Name of first id column of BETYdb table (character length 1)
+#' @param col_2 Name of second id column of BETYdb table (character length 1)
+#' @param val_1 First id value corresponding to column 1 (integer length 1)
+#' @param val_2 Second id value corresponding to column 2 (integer length 1)
 #' @param dbcon Database connection, as created by [RPostgres::dbConnect]
-#' @param commit value indicating whether to commit database transaction;
+#' @param commit Value indicating whether to commit database transaction;
 #' (boolean: TRUE or FALSE, default is FALSE)
 #'
 #' @return exits on success

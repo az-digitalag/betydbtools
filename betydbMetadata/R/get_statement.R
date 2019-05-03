@@ -3,8 +3,8 @@
 #' Get parameterized statement to insert data into specified BETYdb table
 #'
 #' @param dbcon Database connection, as created by [RPostgres::dbConnect]
-#' @param tbl_name name of BETYdb table (character, length 1)
-#' @param fields names of fields to include in statement (character vector)
+#' @param tbl_name Name of BETYdb table (character, length 1)
+#' @param fields Names of fields to include in statement (character vector)
 #'
 #' @return parameterized sql statement to be passed into `prepared_statement` (character, length 1)
 #' @export

@@ -2,14 +2,14 @@
 #'
 #' Add a row of data from google sheet into specified BETYdb table
 #'
-#' @param row single row from google sheet (tibble of dim 1 x n)
+#' @param row Single row from google sheet (tibble of dim 1 x n)
 #' @param dbcon Database connection, as created by [RPostgres::dbConnect]
-#' @param tbl_name name of BETYdb table (character, length 1)
-#' @param tbl_fields names of fields of BETYdb table that are also field names of row;
+#' @param tbl_name Name of BETYdb table (character, length 1)
+#' @param tbl_fields Names of fields of BETYdb table that are also field names of row;
 #' used to subset row (character vector)
 #' @param user_id BETYdb user id; only needed when inserting new experiments;
 #' default = NULL (integer length 1)
-#' @param commit value indicating whether to commit database transaction;
+#' @param commit Value indicating whether to commit database transaction;
 #' (boolean: TRUE or FALSE, default is FALSE)
 #'
 #' @return exits on success
