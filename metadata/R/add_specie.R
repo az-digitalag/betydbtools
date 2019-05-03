@@ -18,9 +18,11 @@
 add_specie <- function(species_to_add, dbcon, commit = FALSE){
   if(length(species_to_add) != 0){
     for(spp in species_to_add){
+      statement <- glue::glue_sql("insert into species (scientificname) values ({spp})",
+                                  .con = dbcon)
       DBI::dbBegin(dbcon)
-      spp_insert <- glue::glue_sql("insert into species (scientificname) values ({spp})",
-                                   .con = dbcon)
+      state <- DBI::dbSendStatement(con, statement)
+      DBI::dbClearResult(state)
       ifelse(commit == TRUE, DBI::dbCommit(dbcon), DBI::dbRollback(dbcon))
     }
   }
