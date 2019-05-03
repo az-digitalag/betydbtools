@@ -17,7 +17,8 @@
 #' @examples
 #' \dontrun{
 #' associate_vals(tbl_name = 'experiment_sites', col_1 = 'experiment_id',
-#' col_2 = 'site_id', val_1 = 900000004, val_2 = 900000178, commit = FALSE)
+#' col_2 = 'site_id', val_1 = 900000004, val_2 = 900000178, dbcon = dbcon,
+#' commit = FALSE)
 #' }
 associate_vals <- function(tbl_name, col_1, col_2, val_1, val_2, dbcon, commit = FALSE){
   statement <- glue::glue_sql("insert into {DBI::SQL(tbl_name)}
