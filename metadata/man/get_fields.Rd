@@ -22,7 +22,7 @@ and is also a field name in betydb table
 }
 \examples{
 \dontrun{
-get_fields(tbl_fields = c('name', 'start_date', 'end_date', 'user_id'),
+get_fields(tbl_fields = c('name', 'start_date', 'end_date', 'description', 'design'),
 row = tibble(name = 'MAC Season 8: Border', start_date = '2019-01-01', end_date = '2019-03-01',
 description = NA, design = NA))
 }
