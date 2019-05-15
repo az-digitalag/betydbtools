@@ -51,7 +51,7 @@
 #' select(id)
 #'
 #' # add new experiments to BETYdb, commit database transaction
-#' add_experiments(user_id$id, dbcon, commit = TRUE, experiments)
+#' add_experiments(dbcon, commit = TRUE, user_id$id, experiments)
 #'
 #' }
 #'

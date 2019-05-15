@@ -4,12 +4,12 @@
 \alias{get_new_cultivars}
 \title{Get new cultivars}
 \usage{
-get_new_cultivars(cultivars, dbcon)
+get_new_cultivars(dbcon, cultivars)
 }
 \arguments{
-\item{cultivars}{Cultivars google sheet object}
-
 \item{dbcon}{Database connection, as created by [RPostgres::dbConnect]}
+
+\item{cultivars}{Cultivars google sheet object}
 }
 \value{
 Combinations of cultivar and specie id to be added to BETYdb cultivars table (tibble)
@@ -50,7 +50,7 @@ gs_obj <- key \%>\% gs_key(lookup = FALSE)
 cultivars <- gs_obj \%>\% gs_read(ws = 'cultivars')
 
 # get new cultivars to add to BETYdb
-get_new_cultivars(cultivars, dbcon)
+get_new_cultivars(dbcon, cultivars)
 
 }
 }

@@ -7,8 +7,8 @@
 #'
 #' The output of this function should be passed into add_cultivars().
 #'
-#' @param cultivars Cultivars google sheet object
 #' @param dbcon Database connection, as created by [RPostgres::dbConnect]
+#' @param cultivars Cultivars google sheet object
 #'
 #' @return Combinations of cultivar and specie id to be added to BETYdb cultivars table (tibble)
 #' @importFrom dplyr anti_join select collect tbl %>% filter
@@ -39,11 +39,11 @@
 #' cultivars <- gs_obj %>% gs_read(ws = 'cultivars')
 #'
 #' # get new cultivars to add to BETYdb
-#' get_new_cultivars(cultivars, dbcon)
+#' get_new_cultivars(dbcon, cultivars)
 #'
 #' }
 #' @export
-get_new_cultivars <- function(cultivars, dbcon){
+get_new_cultivars <- function(dbcon, cultivars){
   # create specie_id column in cultivars
   bety_species <- tbl(dbcon, 'species') %>% collect() # read in updated bety species table
   cultivars$specie_id <- vector('numeric', nrow(cultivars)) # create specie_id column

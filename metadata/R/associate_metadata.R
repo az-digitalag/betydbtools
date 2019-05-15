@@ -36,7 +36,7 @@
 #' sites <- gs_obj %>% gs_read(ws = 'sites')
 #'
 #' # associate experiments with sites in BETYdb, commit database transaction
-#' associate_experiments_sites(sites, dbcon, commit = TRUE)
+#' associate_experiments_sites(dbcon, commit = TRUE, sites)
 #'
 #' }
 #'
