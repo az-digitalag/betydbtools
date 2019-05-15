@@ -4,9 +4,9 @@
 #' will need to be passed in when adding data to all tables but species and cultivars. Users can
 #' choose to commit database transactions by setting the commit parameter to TRUE.
 #'
-#' @param user_id User id for BETYdb account (integer)
 #' @param dbcon Database connection, as created by [RPostgres::dbConnect]
 #' @param commit Value indicating whether to commit database transactions (boolean, TRUE/FALSE)
+#' @param user_id User id for BETYdb account (integer)
 #' @param experiments Experiments google sheet object
 #' @param sites Sites google sheet object
 #' @param treatments Treatments google sheet object
@@ -76,7 +76,7 @@ add_row <- function(row, dbcon, tbl_name, tbl_fields, user_id = NULL, commit = F
 
 #' @export
 #' @rdname add_metadata
-add_experiments <- function(user_id, dbcon, commit, experiments){
+add_experiments <- function(dbcon, commit, user_id, experiments){
 
   # for each row of experiments, upload data using add_row
   apply(experiments,
@@ -92,7 +92,7 @@ add_experiments <- function(user_id, dbcon, commit, experiments){
 
 #' @export
 #' @rdname add_metadata
-add_sites <- function(user_id, dbcon, commit, sites){
+add_sites <- function(dbcon, commit, user_id, sites){
   # for each row of sites, upload data using add_row
   apply(sites,
         MARGIN = 1,
@@ -108,7 +108,7 @@ add_sites <- function(user_id, dbcon, commit, sites){
 
 #' @export
 #' @rdname add_metadata
-add_treatments <- function(user_id, dbcon, commit, treatments){
+add_treatments <- function(dbcon, commit, user_id, treatments){
   # for each row of treatments, upload data using add_row
   apply(treatments,
         MARGIN = 1,
@@ -152,7 +152,7 @@ add_cultivars <- function(dbcon, commit, new_cultivars){
 
 #' @export
 #' @rdname add_metadata
-add_citations <- function(user_id, dbcon, commit, citations){
+add_citations <- function(dbcon, commit, user_id, citations){
   # for each row of citations, upload data using add_row
   apply(citations,
         MARGIN = 1,

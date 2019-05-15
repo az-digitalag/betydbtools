@@ -10,24 +10,24 @@
 \alias{add_citations}
 \title{Upload new metadata to BETYdb}
 \usage{
-add_experiments(user_id, dbcon, commit, experiments)
+add_experiments(dbcon, commit, user_id, experiments)
 
-add_sites(user_id, dbcon, commit, sites)
+add_sites(dbcon, commit, user_id, sites)
 
-add_treatments(user_id, dbcon, commit, treatments)
+add_treatments(dbcon, commit, user_id, treatments)
 
 add_species(dbcon, cultivars)
 
 add_cultivars(dbcon, commit, new_cultivars)
 
-add_citations(user_id, dbcon, commit, citations)
+add_citations(dbcon, commit, user_id, citations)
 }
 \arguments{
-\item{user_id}{User id for BETYdb account (integer)}
-
 \item{dbcon}{Database connection, as created by [RPostgres::dbConnect]}
 
 \item{commit}{Value indicating whether to commit database transactions (boolean, TRUE/FALSE)}
+
+\item{user_id}{User id for BETYdb account (integer)}
 
 \item{experiments}{Experiments google sheet object}
 
