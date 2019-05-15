@@ -128,11 +128,11 @@ add_species <- function(dbcon, cultivars){
   unq_spp <- unique(cultivars$species)
   spp_to_add <- unq_spp[!unq_spp %in% bety_species$scientificname]
   if(length(spp_to_add) != 0){
+    statement <- glue::glue_sql("insert into species (scientificname) values ($1)",
+                                .con = dbcon)
     for(spp in spp_to_add){
-      spp_insert <- glue::glue_sql("insert into species (scientificname) values ({spp})",
-                                   .con = dbcon)
-      send <- DBI::dbSendStatement(dbcon, spp_insert)
-      DBI::dbClearResult(send)
+      params <- unname(as.list(spp))
+      prepared_statement(dbcon, statement, params)
     }
   }
 }
